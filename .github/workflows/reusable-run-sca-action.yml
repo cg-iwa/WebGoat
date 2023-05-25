@@ -60,10 +60,3 @@ jobs:
                   filePath: ${{ inputs.manifest-path }}
                   fail: ${{ inputs.severity != null }}
                   severity: ${{ inputs.severity }}
-
-            - name: Publish SBOM
-              uses: actions/upload-artifact@65d862660abb392b8c4a3d1195a2108db131dd05
-              if: always()
-              with:
-                  name: sbom
-                  path: '*-sbom-cyclonedx.json'

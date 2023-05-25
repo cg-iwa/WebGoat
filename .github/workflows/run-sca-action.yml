@@ -10,4 +10,5 @@ jobs:
         with:
             severity: critical # omitting severity will only report and not fail
             manifest-path: 'pom.xml'
+        # sends all the secrets to the reusable action
         secrets: inherit
