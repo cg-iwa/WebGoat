@@ -6,7 +6,7 @@ on:
 jobs:
     run-sca-analysis:
         name: Run SCA analysis
-        uses: 'cg-iwa/WebGoat/.github/workflows/run-sca-action.yml@carlos/sca-action'
+        uses: './.github/workflows/run-sca-action.yml@carlos/sca-action'
         with:
             #severity: critical # omitting severity will only report and not fail
             manifest: 'pom.xml'
