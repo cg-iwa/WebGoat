@@ -9,5 +9,5 @@ jobs:
         uses: './.github/workflows/reusable-run-sca-action.yml'
         with:
             #severity: critical # omitting severity will only report and not fail
-            manifest: 'pom.xml'
+            manifest-path: 'pom.xml'
         secrets: inherit
